@@ -1,8 +1,4 @@
 class MimeType():
-    """
-    Mimetype
-    :see: https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
-    """
     # Microsoft:
     # https://stackoverflow.com/questions/4212861/what-is-a-correct-mime-type-for-docx-pptx-etc
     # https://www.thoughtco.com/mime-types-by-content-type-3469108
