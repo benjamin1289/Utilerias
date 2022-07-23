@@ -10,6 +10,7 @@ CREATE TABLE Paises(
 	PAI_Nombre_Largo VARCHAR(255) DEFAULT NULL,
 	PAI_Clave VARCHAR(5) NULL,
 	PAI_Nacionalidad VARCHAR(100) NULL,
+	PAI_Lada VARCHAR(10) DEFAULT NULL,
 	PAI_Predeterminado BOOLEAN DEFAULT FALSE
 );
 
@@ -34,11 +35,11 @@ CREATE TABLE Municipios(
 );
 
 /* Paises */
-INSERT INTO Paises VALUES(nextval('seq_paises'), 'México', 'Estados Unidos Mexicanos', 'MEX', 'Mexicana', TRUE)
-, (nextval('seq_paises'),'Estados Unidos', 'Estados Unidos de America', 'USA','Estadounidense', FALSE)
-, (nextval('seq_paises'),'Canada', 'Canada', 'CAN','Canadiense', FALSE)
-, (nextval('seq_paises'),'Guatemala', 'República de Guatemala', 'GTM','Guatemalteca', FALSE)
-, (nextval('seq_paises'),'Belice', 'Belice', 'BLZ','Beliceña', FALSE)
+INSERT INTO Paises VALUES(nextval('seq_paises'), 'México', 'Estados Unidos Mexicanos', 'MEX', 'Mexicana', '52', TRUE)
+, (nextval('seq_paises'),'Estados Unidos', 'Estados Unidos de America', 'USA','Estadounidense', '1', FALSE)
+, (nextval('seq_paises'),'Canada', 'Canada', 'CAN','Canadiense', '1', FALSE)
+, (nextval('seq_paises'),'Guatemala', 'República de Guatemala', 'GTM','Guatemalteca','502', FALSE)
+, (nextval('seq_paises'),'Belice', 'Belice', 'BLZ','Beliceña', '501', FALSE)
 ;
 
 /* Estados */
